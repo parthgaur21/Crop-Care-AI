@@ -1,0 +1,283 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Segoe UI",Tahoma,Geneva,Verdana,sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:linear-gradient(135deg,#0b1f15,#123524,#1b4332);
+    color:white;
+}
+
+.container{
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px 20px;
+}
+
+.card{
+    width:900px;
+    max-width:100%;
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+    border-radius:25px;
+    padding:40px;
+    text-align:center;
+    border:1px solid rgba(255,255,255,.15);
+    box-shadow:0 15px 45px rgba(0,0,0,.35);
+}
+
+.title{
+    font-size:48px;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    color:#d8f3dc;
+    font-size:18px;
+    margin-bottom:30px;
+}
+
+.upload{
+    margin-bottom:25px;
+}
+
+.upload input{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:12px;
+    background:white;
+    cursor:pointer;
+    font-size:15px;
+}
+
+.upload-text{
+    margin-top:12px;
+    color:#d8f3dc;
+    font-size:14px;
+    opacity:.9;
+}
+
+.preview{
+    width:330px;
+    max-width:100%;
+    display:block;
+    margin:25px auto;
+    border-radius:18px;
+    border:5px solid white;
+    box-shadow:0 12px 30px rgba(0,0,0,.35);
+    transition:.3s;
+}
+
+.preview:hover{
+    transform:scale(1.03);
+}
+
+button{
+    margin-top:20px;
+    padding:15px 35px;
+    border:none;
+    border-radius:12px;
+    background:#2ecc71;
+    color:white;
+    font-size:20px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#27ae60;
+    transform:translateY(-2px);
+}
+
+button:disabled{
+    background:#7f8c8d;
+    cursor:not-allowed;
+    transform:none;
+}
+
+.note{
+    margin-top:15px;
+    color:#d8f3dc;
+    font-size:14px;
+    opacity:.9;
+}
+
+.loading{
+    margin-top:35px;
+}
+
+.loader{
+    width:65px;
+    height:65px;
+    margin:0 auto 20px;
+    border:7px solid rgba(255,255,255,.2);
+    border-top:7px solid #2ecc71;
+    border-radius:50%;
+    animation:spin 1s linear infinite;
+}
+
+@keyframes spin{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
+
+.result{
+    margin-top:35px;
+    background:white;
+    color:#222;
+    border-radius:20px;
+    padding:30px;
+    text-align:left;
+    animation:fade .4s ease;
+}
+
+@keyframes fade{
+    from{
+        opacity:0;
+        transform:translateY(15px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.result h2{
+    color:#1b5e20;
+    margin-bottom:10px;
+}
+
+.result h3{
+    color:#2e7d32;
+    margin-top:20px;
+    margin-bottom:15px;
+}
+
+.status{
+    display:inline-block;
+    margin:10px 0 20px;
+    padding:10px 22px;
+    border-radius:30px;
+    color:white;
+    font-weight:bold;
+    font-size:15px;
+}
+
+.healthy{
+    background:#2ecc71;
+}
+
+.infected{
+    background:#e74c3c;
+}
+
+.progress{
+    width:100%;
+    height:14px;
+    background:#ddd;
+    border-radius:20px;
+    overflow:hidden;
+    margin-bottom:25px;
+}
+
+.progress-fill{
+    height:100%;
+    background:linear-gradient(90deg,#2ecc71,#27ae60);
+    border-radius:20px;
+    transition:width .8s ease;
+}
+
+.info-card{
+    background:#f7fff8;
+    border-left:6px solid #2ecc71;
+    padding:18px;
+    border-radius:12px;
+    margin-bottom:18px;
+    transition:.3s;
+}
+
+.info-card:hover{
+    transform:translateX(4px);
+}
+
+.info-card h4{
+    color:#1b5e20;
+    margin-bottom:10px;
+}
+
+.info-card p{
+    color:#333;
+    line-height:1.7;
+}
+
+.pdf-btn{
+    width:100%;
+    background:#1565c0;
+    margin-top:20px;
+}
+
+.pdf-btn:hover{
+    background:#0d47a1;
+}
+
+.footer{
+    margin-top:35px;
+    color:#d8f3dc;
+    font-size:15px;
+    opacity:.9;
+}
+
+.footer b{
+    color:white;
+}
+
+@media(max-width:768px){
+
+.card{
+    padding:25px;
+}
+
+.title{
+    font-size:34px;
+}
+
+.subtitle{
+    font-size:16px;
+}
+
+.preview{
+    width:240px;
+}
+
+button{
+    width:100%;
+    font-size:18px;
+}
+
+.result{
+    padding:20px;
+}
+
+.status{
+    width:100%;
+    text-align:center;
+}
+
+.info-card{
+    padding:15px;
+}
+
+}
