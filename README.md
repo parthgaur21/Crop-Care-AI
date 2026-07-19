@@ -166,15 +166,18 @@ npm run dev
 
 ### Home Page
 
-(Add Screenshot)
+<img width="2560" height="1600" alt="Screenshot 2026-07-19 232928" src="https://github.com/user-attachments/assets/ff4a015b-639b-4201-8e30-914f8974ec46" />
+
 
 ### Prediction Result
 
-(Add Screenshot)
+<img width="1084" height="1022" alt="Screenshot 2026-07-19 234600" src="https://github.com/user-attachments/assets/32fe62b9-32bf-46bc-93a0-34af01b7f3b3" />
+
 
 ### PDF Report
 
-(Add Screenshot)
+<img width="2560" height="1600" alt="Screenshot 2026-07-19 234657" src="https://github.com/user-attachments/assets/9bf6b312-e1a6-41f4-8a7c-8dcddcfd0e18" />
+
 
 ---
 
